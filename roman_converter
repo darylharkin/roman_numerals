@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative 'roman_numeral'
+
+loop do
+puts "Enter a number: "
+num = gets.to_i
+
+converter = RomanNumeral.new
+puts 'Number in Roman Numerals is ' + converter.to_roman(num)
+
+end
